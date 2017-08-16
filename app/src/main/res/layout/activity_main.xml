@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground"
+    tools:context="posidenpalace.com.musicplayer.view.activities.mainactivity.MainActivity">
+
+   <android.support.v7.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="200dp"
+       android:id="@+id/rvMAmusicHolder"
+       android:layout_margin="20dp"
+       android:background="@color/RecyclerBackground">
+
+   </android.support.v7.widget.RecyclerView>
+    
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/btnMMPrevious"
+            android:onClick="previousSong"
+            android:background="@drawable/previous_song"/>
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/btnMMPlay"
+            android:onClick="playMusic"
+            android:background="@drawable/play_button"/>
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/btnMMStop"
+            android:onClick="stopMusic"
+            android:background="@drawable/stop_button"/>
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/btnMMNext"
+            android:onClick="nextSong"
+            android:background="@drawable/next_song"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
